@@ -18,7 +18,24 @@ def test_alive_neighbours():
         assert life.alive_neighbours(grid,2,1)==2
         assert life.alive_neighbours(grid,2,2)==2
 
+def test_make_alive():
+        grid= [[0,1,0],
+	       [0,1,1],
+	       [0,0,0]]
+        if life.make_alive(grid,0,0):
+                
+                assert grid[0][0]==1
 
+def test_kill_it():
+        grid= [[0,1,0],
+	       [0,1,1],
+	       [0,0,0]]
+        if life.kill_it(grid,0,0):
+                assert grid[0][0]==0
+        
+        
+        
+        
         
         
 
