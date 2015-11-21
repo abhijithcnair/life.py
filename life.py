@@ -19,6 +19,12 @@ def alive_neighbours(grid, x,y,):
                 count= count+grid[nx][ny]
             except IndexError:
                 continue
-            
+  return count
+def make_alive(grid,x,y):
+    grid[x][y]==1
+
+def kill_it(grid,x,y):
+    grid[x][y]==0
+               
             
             
